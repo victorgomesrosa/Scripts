@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Ancora</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.ancoras').click(function(){
+      var alvo = $(this).attr('href').split('#').pop();
+      $('html, body').animate({scrollTop: $('#'+alvo).offset().top }, 1000);
+      return false;
+   });
+});
+</script> 
+</head>
+
+<body>
+
+	<div id="anctop">
+	</div>
+
+	<div class="geral">
+	    <nav class="fundomenu">
+			<ul class="sub_menu">
+				<li><a href="quem_sou.html" class="ancoras">MINHA HISTÓRIA</a></li>
+				<li><a href="quem_sou.html#anc20" class="ancoras">FILOSOFIA DE VIDA</a></li>
+				<li><a href="quem_sou.html#anc30" class="ancoras">MISSÃO</a></li>
+				<li><a href="quem_sou.html#anc40" class="ancoras">VISÃO</a></li>
+				<li><a href="quem_sou.html#anc50" class="ancoras">VALORES E DIFERENCIAL COMPETITIVO</a></li>
+				<li><a href="quem_sou.html#anc60" class="ancoras">FORMAÇÃO</a></li>
+				<li><a href="quem_sou.html#anc70" class="ancoras">EXPERIÊNCIA PROFISSINAL</a></li>
+				<li><a href="quem_sou.html#anc80" class="ancoras">COMPETÊNCIAS PROFISSIONAIS</a></li>
+			</ul>
+		</nav>
+	</div>
+
+</body>
+</html>
